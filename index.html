@@ -2,23 +2,42 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
-    <title>Сводишь с ума</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой любимый фильм: Сводишь с ума</title>
+    <link href="https://jsdelivr.net" rel="stylesheet">
 </head>
-<body>
-    <nav>
-        <a href="index.html">Главная</a> |
-        <a href="what.html">О фильме</a> |
-        <a href="atmosphere.html">Атмосфера</a> |
-        <a href="who.html">Режиссёр</a>
+<body style="background-color: #121212; color: #ffffff; font-family: sans-serif;">
+
+    <!-- Меню сайта -->
+    <nav class="navbar navbar-expand navbar-dark bg-dark justify-content-center p-3 shadow-sm">
+        <div class="navbar-nav" style="gap: 20px; font-size: 1.1rem;">
+            <a class="nav-link active fw-bold" href="index.html" style="color: #ff4a4a;">Главная</a>
+            <a class="nav-link" href="what.html">О фильме</a>
+            <a class="nav-link" href="atmosphere.html">Атмосфера</a>
+            <a class="nav-link" href="who.html">Режиссёр</a>
+        </div>
     </nav>
 
-    <div class="hero-section">
-        <div class="container">
-            <h1 class="display-2 fw-bold text-uppercase tracking-wider" style="text-shadow: 2px 4px 10px rgba(0,0,0,0.5);">Сводишь с ума</h1>
-            <p class="lead fs-3 mt-2 fst-italic" style="text-shadow: 1px 2px 5px rgba(0,0,0,0.5);">Художественный фильм Дарьи Лебедевой (2025)</p>
-            <a href="#video" class="btn btn-danger btn-lg mt-4 px-5 py-3 rounded-pill shadow fw-bold">Узнать сюжет</a>
+    <!-- Контент -->
+    <div class="container d-flex flex-column align-items-center justify-content-center text-center" style="min-height: 70vh;">
+        <div class="p-5 rounded-4 shadow-lg" style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); max-width: 800px;">
+            <h1 class="display-1 fw-bold text-uppercase tracking-wider mb-3" style="text-shadow: 0px 4px 15px rgba(255,74,74,0.3);">
+                Сводишь с ума
+            </h1>
+            <p class="lead fs-3 text-muted fst-italic mb-4">
+                Художественный фильм Дарьи Лебедевой (2025)
+            </p>
+            <div class="mt-2">
+                <a href="what.html" class="btn btn-danger btn-lg px-5 py-3 rounded-pill fw-bold shadow">
+                    Узнать сюжет фильма
+                </a>
+            </div>
         </div>
     </div>
-    <script src="https://jsdelivr.net"></script>
+
+    <footer class="text-center text-muted py-4">
+        &copy; 2026 Сайт о фильме «Сводишь с ума»
+    </footer>
+
 </body>
 </html>
