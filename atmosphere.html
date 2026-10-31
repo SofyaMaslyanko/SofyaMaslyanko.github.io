@@ -1,35 +1,71 @@
-  <!doctype html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Фильм</title>
-    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=xowdsTNSJmmYgu-z59D2S_ueBuhkJOzy-zigl4RGJQX7hmNYKPUbo8pNIvDNkC_-LXfVm8bPeZgxO-jxkk0RaA" charset="UTF-8"></script><script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=wOBwmV_EptLl2IPx7GIPK6RH1Sm7pLvhKKF3qc44RAqPZtVmxxIV_yvt_lpV0jXta7L4AOxTskjLu5r3ah81Pg" charset="UTF-8"></script></head>
-    <body>
-        <nav>
-            <a href="index.html">Главная</a> |
-            <a href="what.html">О чем фильм?</a> |
-            <a href="atmosphere.html">Атмосфера</a> |
-            <a href="who.html">Режиссёр</a>
-        </nav>
-        <hr>
-<section class="bg-light py-5" id="gallery">
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Атмосфера | Сводишь с ума</title>
+    <link href="https://jsdelivr.net" rel="stylesheet">
+    <style>
+        /* Стили, чтобы все картинки были одинакового аккуратного размера */
+        .gallery-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        .gallery-img:hover {
+            transform: scale(1.03);
+        }
+    </style>
+</head>
+<body style="background-color: #121212; color: #ffffff; font-family: sans-serif;">
 
+    <!-- Меню сайта -->
+    <nav class="navbar navbar-expand navbar-dark bg-dark justify-content-center p-3 shadow-sm">
+        <div class="navbar-nav" style="gap: 20px; font-size: 1.1rem;">
+            <a class="nav-link" href="index.html">Главная</a>
+            <a class="nav-link" href="what.html">О фильме</a>
+            <a class="nav-link active fw-bold" href="atmosphere.html" style="color: #ff4a4a;">Атмосфера</a>
+            <a class="nav-link" href="who.html">Режиссёр</a>
+        </div>
+    </nav>
 
-<div class="container">
-            <h2 class="fw-bold text-center mb-2">Атмосфера киноленты</h2>
-            <p class="text-muted text-center mb-5">Эстетика и дух фильма</p>
+    <!-- Галерея картинок -->
+    <div class="container my-5">
+        <h1 class="text-center mb-5 fw-bold text-uppercase tracking-wide" style="color: #ff4a4a;">Атмосфера фильма в кадрах</h1>
 
-            <div class="row g-4">
-                <div class="col-md-6">
-                    <div class="card gallery-card">
-                        <img src="i.webp" class="card-img-top gallery-img" width="500" alt="Кадр 1">
-                        <img src="соня сайт 3.jpg" class="card-img-top gallery-img" width="500"s alt="Кадр 2">
-                        <img src="photo..33.jpg" class="card-img-top gallery-img" width="500"s alt="Кадр 3">
-                        <img src="photo.2.webp" class="card-img-top gallery-img" width="500"s alt="Кадр 4">
-                        <img src="photo.22.png" class="card-img-top gallery-img" width="500"s alt="Кадр 5">
-                        <img src="ph22.webp" class="card-img-top gallery-img" width="500"s alt="Кадр 6">
-                    </div>
-                </div>
+        <div class="row g-4">
+            <!-- Кадр 1 -->
+            <div class="col-12 col-sm-6 col-md-4">
+                <img src="i.webp" class="gallery-img rounded shadow-lg border border-secondary" alt="Кадр 1">
+            </div>
+
+            <!-- Кадр 2 -->
+            <div class="col-12 col-sm-6 col-md-4">
+                <img src="ph22.webp" class="gallery-img rounded shadow-lg border border-secondary" alt="Кадр 2">
+            </div>
+
+            <!-- Кадр 3 -->
+            <div class="col-12 col-sm-6 col-md-4">
+                <img src="ph33.webp" class="gallery-img rounded shadow-lg border border-secondary" alt="Кадр 3">
+            </div>
+
+            <!-- Кадр 4 -->
+            <div class="col-12 col-sm-6 col-md-4">
+                <img src="photo..33.jpg" class="gallery-img rounded shadow-lg border border-secondary" alt="Кадр 4">
+            </div>
+
+            <!-- Кадр 5 -->
+            <div class="col-12 col-sm-6 col-md-4">
+                <img src="photo.22.jpg" class="gallery-img rounded shadow-lg border border-secondary" alt="Кадр 5">
+            </div>
+
+            <!-- Кадр 6 -->
+            <div class="col-12 col-sm-6 col-md-4">
+                <img src="соня сайт 3.jpg" class="gallery-img rounded shadow-lg border border-secondary" alt="Кадр 6">
             </div>
         </div>
-    </section>
+    </div>
+
+</body>
+</html>
